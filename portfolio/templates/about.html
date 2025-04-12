@@ -1,0 +1,117 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'resume/css/about.css' %}">
+{% endblock %}
+{% block title %}
+<title>About | Anupam Yadav</title>
+{% endblock %}
+{% block body %}
+    <div class="hero-section">
+        <div class="about-me-box">
+            <p class="subtitle">Get to know me</p>
+            <h1 class="title">About Me</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-section">
+            <div class="pic">
+                <img src="{% static 'resume/images/img2.jpeg' %}" alt="Anupam Yadav" class="profile-image">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="detail-intro">
+                <h3 class="intro-subtitle">Who am I?</h3>
+                <h2 class="intro-title">I'm Anupam Yadav, Machine Learning Engineer and Python Fullstack Developer</h2>
+                <p class="intro-text">I am a passionate and innovative developer with expertise in Django (backend) and Data science, specializing in AI, machine learning, and web development. With a strong background in deep learning, and automation.</p>
+                
+                <div class="divider"></div>
+                
+                <div class="detail">
+                    <ul class="info-list name-list">
+                        <li><span>Name:</span> Anupam Yadav</li>
+                        <li><span>Email:</span> <a href="mailto:annuyadav742886@gmail.com">annuyadav742886@gmail.com</a></li>
+                    </ul>
+                    <ul class="info-list age-list">
+                        <li><span>Age:</span> 23</li>
+                        <li><span>From:</span> Noida, Uttar Pradesh</li>
+                    </ul>
+                </div>
+                
+                <ul class="social-icon-list">
+                    <li class="Download-btn">
+                        <button class="cta-button">
+                            <i class="fas fa-download"></i> Download CV
+                        </button>
+                    </li>
+                    <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Anupamyadav7428" class="social-link"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <div class="services-header">
+            <p class="service-subtitle">Services I offer to my clients</p>
+            <h2 class="service-title">My Services</h2>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="card-title">Web Development</h3>
+                <p class="card-text">Custom website development with modern frameworks and responsive design principles.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3 class="card-title">Machine Learning</h3>
+                <p class="card-text">Building intelligent systems and predictive models for data-driven solutions.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h3 class="card-title">AI Solutions</h3>
+                <p class="card-text">Implementing cutting-edge artificial intelligence for business applications.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3 class="card-title">Python Development</h3>
+                <p class="card-text">Backend systems and automation scripts using Python's powerful ecosystem.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="card-title">Data Science</h3>
+                <p class="card-text">Extracting insights from complex datasets to drive business decisions.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <h3 class="card-title">Computer Vision</h3>
+                <p class="card-text">Developing OpenCV solutions for image processing and analysis.</p>
+                <div class="card-hover-effect"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

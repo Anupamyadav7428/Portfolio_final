@@ -1,0 +1,149 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'resume/css/resume.css' %}">
+{% endblock %}
+{% block title %}
+<title>Anupam Yadav - Resume</title>
+{% endblock %}
+{% block body %}
+    <div class="resume-header">
+        <p class="subtitle">Check out my professional journey</p>
+        <h1 class="title">Resume</h1>
+    </div>
+
+    <div class="resume-container">
+        <div class="profile-section">
+            <div class="profile-header">
+                <h1>ANUPAM YADAV</h1>
+                <div class="contact-links">
+                    <a href="https://github.com/Anupamyadav7428" target="_blank"><i class="fab fa-github"></i> Github/Anupam</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn/Anupam</a>
+                    <a href="#"><i class="fas fa-code"></i> Leetcode/Anupam</a>
+                    <a href="mailto:annuyadav742886@gmail.com"><i class="fas fa-envelope"></i> annuyadav742886@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="resume-columns">
+                <div class="left-column">
+                    <section class="education-section">
+                        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div class="timeline-card">
+                            <h3>GAIGOTIAS UNIVERSITY</h3>
+                            <p class="timeline">Bachelor of Technology in Computer Science and Engineering | October 2022 - Present</p>
+                            <p class="details">CPI: 7.8</p>
+                        </div>
+                        <div class="timeline-card">
+                            <h3>12th CBSE</h3>
+                            <p class="details">84 Percentage</p>
+                        </div>
+                        <div class="timeline-card">
+                            <h3>10th CBSE</h3>
+                            <p class="details">88 Percentage</p>
+                        </div>
+                    </section>
+
+                    <section class="experience-section">
+                        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+                        <div class="timeline-card">
+                            <h3>ML Intern at Kickr Technology</h3>
+                            <p class="timeline">Current</p>
+                            <ul class="experience-details">
+                                <li>Undergoing 6-month internship focusing on machine learning-based solutions</li>
+                                <li>Involved in model optimization and feature engineering</li>
+                                <li>Collaborating with cross-functional teams for real-time applications</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="skills-section">
+                        <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages & Subjects</h4>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>SQL</li>
+                                    <li>Machine Learning</li>
+                                    <li>Deep Learning</li>
+                                    <li>DSA</li>
+                                    <li>OpenCV</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks & Libraries</h4>
+                                <ul class="skill-list">
+                                    <li>TensorFlow</li>
+                                    <li>Keras</li>
+                                    <li>Django</li>
+                                    <li>NumPy</li>
+                                    <li>Pandas</li>
+                                    <li>Matplotlib</li>
+                                    <li>Scikit-learn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="projects-section">
+                        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projects</h2>
+                        <div class="project-card">
+                            <h3>AI-Powered Chatbot</h3>
+                            <ul class="project-details">
+                                <li>Developed a powered chatbot capable of handling real-time user queries with dynamic and context-aware responses</li>
+                                <li>Fine-tuned a Generative AI model to improve precision and response relevance</li>
+                                <li>Designed a robust Django REST framework backend</li>
+                                <li><strong>Tech Stack:</strong> Generative AI Model, Django, Django REST Framework</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <h3>Online Attendance System Using OpenCV</h3>
+                            <ul class="project-details">
+                                <li>Developed an online attendance system leveraging OpenCV for real-time face recognition</li>
+                                <li>Implemented efficient face detection and recognition techniques</li>
+                                <li><strong>Tech Stack:</strong> Python, OpenCV, NumPy, Dlib, SQLite</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <h3>HR Replacement - Face Recognition Based Test System</h3>
+                            <ul class="project-details">
+                                <li>Designed a face recognition-based HR replacement system with secure login</li>
+                                <li>Integrated face verification and continuous recognition during tests</li>
+                                <li><strong>Tech Stack:</strong> Python, OpenCV, SQLite, Face Recognition Libraries</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="achievements-section">
+                        <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements & Certificates</h2>
+                        <div class="achievement-card">
+                            <p>AI Using Python Issued by Ducat (Certificate Number: 31122022884404104)</p>
+                        </div>
+                        <div class="achievement-card">
+                            <p>Smart India Hackathon(SIH) Prequalifier: Brain Cancer Detection using OpenCV</p>
+                        </div>
+                        <div class="achievement-card">
+                            <p>Dexterix 4.0 Hackathon: Developed a project on Sustainable Development Goals</p>
+                        </div>
+                        <div class="achievement-card">
+                            <p>Member of the Organizing Team for TED Talk IIITV 2023</p>
+                        </div>
+                    </section>
+
+                    <section class="soft-skills-section">
+                        <h2 class="section-title"><i class="fas fa-comments"></i> Soft Skills</h2>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill">Analyzing Challenges</div>
+                            <div class="soft-skill">Effective Communication</div>
+                            <div class="soft-skill">Team Collaboration</div>
+                            <div class="soft-skill">Problem Solving</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'resume/css/style.css' %}">
+<style>
+    :root {
+        --bg-image: url('{% static 'resume/images/background_img.jpeg' %}');
+    }
+</style>
+{% endblock %}
+
+{% block title %}
+<title>Anupam Yadav | ML Engineer</title>
+{% endblock %}
+{% block body %}
+    <div class="background-overlay"></div>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{% static 'resume/images/logo.png' %}" alt="Anupam Yadav Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="{% url 'resume' %}" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="name-container">
+                <h1 class="name">Anupam Yadav</h1>
+                <h2 class="designation">ML Engineer & Fullstack Developer</h2>
+                <p class="tagline">Transforming data into intelligent solutions</p>
+            </div>
+            
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li class="social-item">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/Anupamyadav7428" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text">See More</span>
+            <div class="scroll-line"></div>
+        </div>
+    </main>
+
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'resume/css/contact.css' %}">
+{% endblock %}
+{% block title %}
+<title>Contact</title>
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <!-- Header Section -->
+        <section class="text-section">
+            <p>Feel free to reach out anytime</p>
+            <h1>Get In Touch</h1>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <!-- Contact Form -->
+            <div class="form-column">
+                <h2><i class="fas fa-paper-plane"></i> Message me</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="input-group input-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email"  name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text"  name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="form-column">
+                <h2><i class="fas fa-info-circle"></i> Contact Info</h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA 94107</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <a href="mailto:hello@example.com">hello@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Mon-Fri: 9AM - 5PM</p>
+                            <p>Sat-Sun: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="message">
+                <h2>{{status_message}}</h2>
+            </div>
+        </section>
+    </div>
+{% endblock %}

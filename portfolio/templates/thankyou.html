@@ -1,0 +1,59 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block link %}
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .thank-you-box {
+        background-color: white;
+        padding: 40px 60px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        color: #28a745;
+    }
+
+    p {
+        margin-top: 15px;
+        color: #333;
+        font-size: 16px;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    a:hover {
+        background-color: #218838;
+    }
+</style>
+{% endblock %}
+
+{% block title %}
+<title>Thank You!</title>
+{% endblock %}
+{% block body %}
+    <div class="thank-you-box">
+        <h1>Thank You!</h1>
+        <p>We've received your message and will get back to you as soon as possible.</p>
+        <p>Meanwhile, check your email for a confirmation message.</p>
+        <a href="{% url 'base' %}">Back to Home</a>
+    </div>
+{% endblock %}
